@@ -1,4 +1,4 @@
-﻿﻿namespace Task6
+﻿namespace Task6
 {
     public class Circle
     {

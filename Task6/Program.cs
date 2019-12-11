@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 
 namespace Task6
 {
@@ -21,7 +21,7 @@ namespace Task6
             var circles = ReadCircles();
             if (circles[0].IsIntersect(circles[1]))
                 Console.WriteLine($"Да, пересекаются\n{circles[0].GetMarkupParameters()}\n" +
-                    $"{circles[1].GetMarkupParameters()}");
+                                  $"{circles[1].GetMarkupParameters()}");
             else
                 Console.WriteLine("Нет, не пересекаются");
         }

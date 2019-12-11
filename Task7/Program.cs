@@ -33,19 +33,19 @@ namespace Task7
             Console.WriteLine(CreateMarkupString(technique, rectangle) + $"{technique}");
         }
 
-        private static string CreateMarkupString(Tractor t, Rectangtle r) => 
+        private static string CreateMarkupString(Tractor t, Rectangle r) => 
             $"Rectangle data:\n{r.A.X}{r.A.Y}\n{r.B.X}{r.B.Y}" +
             $"\n{r.C.X}{r.C.Y}\n{r.D.X}{r.D.Y}\n" +
             $"Total Consumption: {t.GetTotalConsumption(r.GetSquare())}";
         
-        private static bool IsBiggerThan(Rectangtle r) =>
+        private static bool IsBiggerThan(Rectangle r) =>
             r.GetSquare() > double.Parse(Console.ReadLine());
      
-        private static Rectangtle ReadRectangle(string path)
+        private static Rectangle ReadRectangle(string path)
         {
             //using declaration from C# 8.0. Lifetime как у using{..,} 
             using var reader = new StreamReader(path);
-            var rectangle = new Rectangtle();
+            var rectangle = new Rectangle();
             rectangle.ReadFromFile(reader);
             return rectangle;
         }

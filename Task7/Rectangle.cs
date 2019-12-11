@@ -1,9 +1,9 @@
-﻿﻿using System;
+using System;
 using System.IO;
 
 namespace Task7
 {
-    public class Rectangtle
+    public class Rectangle
     {
         private Point _a = new Point();
         public Point A => _a;

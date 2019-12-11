@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace SMTUTasks
+namespace Task1
 {
     //             Анализ
     //  - Подсчитать количество вхождений каждой буквы в строке
